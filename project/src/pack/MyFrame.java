@@ -5,8 +5,8 @@ import javax.swing.*;
 
 public class MyFrame extends JFrame {
 	
-	private static int screenWidth = 640;
-	private static int screenHeight = 480;
+	private static int screenWidth = 1280;
+	private static int screenHeight = 720;
 	
 	
 	MyFrame() {
@@ -14,6 +14,7 @@ public class MyFrame extends JFrame {
 		this.setSize(screenWidth, screenHeight);
 		this.setLayout(null);
 		this.addKeyListener(Main.getController());
+		this.getContentPane().setBackground(new Color(0, 255, 0, 255));
 		
 		this.setVisible(true);
 		

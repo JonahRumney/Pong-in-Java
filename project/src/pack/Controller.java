@@ -18,27 +18,57 @@ public class Controller extends Component implements KeyListener {
 		switch(e.getKeyCode()) {
 		case 87:
 			//pressed w
+			Main.getPlayer1().setDirection(-1);
+			
 			break;
 		case 83:
 			//pressed s 
+			Main.getPlayer1().setDirection(1);
+			
 			break;
-		case 38:
+		case 73:
 			//up arrow
+			Main.getPlayer2().setDirection(-1);
+			
 			break;
-		case 40:
+		case 75:
 			//down arrow
+			Main.getPlayer2().setDirection(1);
+			
 			break;
 		default:
 			break;
-		}
-	
-		
+		}	
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
 		System.out.println("yoo");
+		switch(e.getKeyCode()) {
+		case 87:
+			//pressed w
+			Main.getPlayer1().setDirection(0);
+			
+			break;
+		case 83:
+			//pressed s 
+			Main.getPlayer1().setDirection(0);
+			
+			break;
+		case 73:
+			//up arrow
+			Main.getPlayer2().setDirection(0);
+			
+			break;
+		case 75:
+			//down arrow
+			Main.getPlayer2().setDirection(0);
+			
+			break;
+		default:
+			break;
 		
 	}
 	
+}
 }

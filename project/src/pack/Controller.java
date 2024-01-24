@@ -14,7 +14,6 @@ public class Controller extends Component implements KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		System.out.println(e.getKeyCode());
 		switch(e.getKeyCode()) {
 		case 87:
 			//pressed w
@@ -43,7 +42,6 @@ public class Controller extends Component implements KeyListener {
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		System.out.println("yoo");
 		switch(e.getKeyCode()) {
 		case 87:
 			//pressed w

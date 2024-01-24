@@ -14,7 +14,7 @@ public class MyFrame extends JFrame {
 		this.setSize(screenWidth, screenHeight);
 		this.setLayout(null);
 		this.addKeyListener(Main.getController());
-		this.getContentPane().setBackground(new Color(0, 255, 0, 255));
+		this.getContentPane().setBackground(new Color(0, 0, 0, 255));
 		
 		this.setVisible(true);
 		
@@ -24,7 +24,7 @@ public class MyFrame extends JFrame {
 		return screenWidth;
 	}
 	public static int getScreenHeight() {
-		return screenHeight;
+		return screenHeight - 35; //35 is just weird offset
 	}
 	
 }

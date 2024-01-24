@@ -1,6 +1,7 @@
 package pack;
 
 import javax.swing.JLabel;
+import java.awt.Color;
 
 public class Player {
 	private int x;
@@ -24,6 +25,7 @@ public class Player {
 		y = MyFrame.getScreenHeight()/2;
 		paddle = new JLabel();
 		paddle.setOpaque(true);
+		paddle.setBackground(Color.white);
 		Main.getMyFrame().add(paddle); //add each player to main scene
 		
 		
@@ -37,6 +39,12 @@ public class Player {
 	}
 	public int getY() {
 		return y;
+	}
+	public int getWidth() {
+		return width;
+	}
+	public int getHeight() {
+		return height;
 	}
 	public void move() {
 		y += speed * direction;
